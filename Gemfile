@@ -34,8 +34,11 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :test do
+group :test, :development do
+  gem 'turn'
   gem 'rspec-rails'
+  gem 'capybara'
+  gem 'guard-rspec'
 end
 
 group :development do

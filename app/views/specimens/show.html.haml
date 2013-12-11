@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Parent:
+  = @specimen.parent
+%p
+  %b Type:
+  = @specimen.type
+%p
+  %b Label:
+  = @specimen.label
+
+= link_to 'Edit', edit_specimen_path(@specimen)
+\|
+= link_to 'Back', specimens_path
