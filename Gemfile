@@ -5,10 +5,11 @@ gem 'rails', '4.0.0'
 
 gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
 gem 'bson_ext'
-gem 'slim-rails'
+gem 'haml-rails'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
+gem 'bootstrap-sass', '~> 3.0.3.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -37,6 +38,9 @@ group :test do
   gem 'rspec-rails'
 end
 
+group :development do
+  gem 'rails_layout'
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
