@@ -4,7 +4,7 @@ class SpecimensController < ApplicationController
   # GET /specimens
   # GET /specimens.json
   def index
-    @specimens = Specimen.all
+    @specimens = Specimen.all.to_a
   end
 
   # GET /specimens/1
