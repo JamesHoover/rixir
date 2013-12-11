@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Id:
+  = @speciman.id
+p
+  strong Label:
+  = @speciman.label
+p
+  strong Type:
+  = @speciman.type
+
+= link_to 'Edit', edit_speciman_path(@speciman)
+'|
+= link_to 'Back', specimen_path
