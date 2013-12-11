@@ -5,3 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+# Basic Blood heirarchy
+blood = Specimen.create(label: 'ABC', type: 'Blood')
+blood.save
+
+# Basic Tissue Heirarchy
+block = Specimen.create(label: '123', type: 'FFPE')
+block.save
+
+# Basic TMA Heirarchy
