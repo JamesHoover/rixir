@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Id:
+  = @speciman.id
+%p
+  %b Parent:
+  = @speciman.parent
+%p
+  %b Type:
+  = @speciman.type
+%p
+  %b Label:
+  = @speciman.label
+
+= link_to 'Edit', edit_speciman_path(@speciman)
+\|
+= link_to 'Back', specimen_path
