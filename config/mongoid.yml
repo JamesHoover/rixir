@@ -3,7 +3,7 @@ development:
   sessions:
     # Defines the default session. (required)
     default:
-      uri: <%= ENV['MONGODB_DEVELOPMENT_URI']>
+      uri: <%= ENV['MONGODB_DEVELOPMENT_URI']%>
       options:
         # Change the default write concern. (default = { w: 1 })
         # write:
