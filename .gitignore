@@ -17,3 +17,6 @@
 
 # Ignore vim cache files
 *.swp
+
+# Ignore .DS_Store
+.DS_Store
