@@ -1,4 +1,4 @@
-= form_for @specimen do |f|
+= form_for @specimen, {:html=>{:class => 'form form-horizontal edit_specimen row'}} do |f|
   - if @specimen.errors.any?
     #error_explanation
       %h2= "#{pluralize(@specimen.errors.count, "error")} prohibited this specimen from being saved:"

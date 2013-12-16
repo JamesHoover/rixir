@@ -1,12 +1,11 @@
 %h1 Listing specimens
 
-%table
+%table{:class => "table table-striped custab"}
   %tr
     %th Parent
     %th Type
     %th Label
-    %th
-    %th
+    %th Action
     %th
 
   - @specimens.each do |specimen|
@@ -14,10 +13,10 @@
       %td= specimen.parent
       %td= specimen.type
       %td= specimen.label
-      %td= link_to 'Show', specimen
-      %td= link_to 'Edit', edit_specimen_path(specimen)
-      %td= link_to 'Destroy', specimen, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
+      %td
+        = link_to 'Show', specimen_path(specimen), class: 'btn btn-xs btn-success'
+        = link_to 'Edit', edit_specimen_path(specimen), class: 'btn btn-xs btn-info'
+        = link_to 'Destroy', specimen, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-xs btn-danger'
 %br
 
-= link_to 'New Specimen', new_specimen_path
+= link_to 'New Specimen', new_specimen_path, class: 'btn btn-default'
